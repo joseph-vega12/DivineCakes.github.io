@@ -1,0 +1,847 @@
+body {
+    background-color: white !important;
+    color: black !important;
+    /* background-color:  !important; */
+}
+
+.navbar {
+    float: right;
+    font-family: "Sriracha";
+}
+
+.nav-item {
+    margin-left: 35px;
+}
+
+.top-content {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(../imgs/landing-image.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 970px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.image-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f5c181;
+    font-family: "Dancing Script";
+}
+
+.image-text span {
+    font-size: 40px;
+    animation: 2s text-slide;
+}
+
+@keyframes text-slide {
+    from {
+        margin-right: 50%;
+    }
+
+    to {
+        margin-right: 0;
+    }
+}
+
+.image-text h1 {
+    font-family: "Sriracha";
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+.image-text p {
+    font-size: 40px;
+    animation: 2s p-slide;
+}
+
+@keyframes p-slide {
+    from {
+        margin-right: -50%;
+    }
+
+    to {
+        margin-right: 0;
+    }
+}
+
+/* Box Content */
+
+.box-content {
+    position: relative;
+    top: 100%;
+    color: black;
+    padding-top: 40px;
+    width: 100%;
+    height: 250px;
+    background-color: #eeeeee;
+}
+
+.title-box .pref {
+    float: left;
+    color: #fd0054;
+    font-size: 100px;
+    font-family: "Sriracha";
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.title-box .sub {
+    display: inline-block;
+    font-size: 21px;
+    font-family: "Sriracha";
+    /* font-family: "Dancing Script"; */
+    line-height: 30px;
+    font-weight: 400;
+    /* font-weight: 600; */
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.title-box .title {
+    float: right;
+    font-size: 42px;
+    font-family: "Sriracha";
+    margin-top: 0;
+}
+
+.box-content h5 {
+    font-size: 17px;
+}
+
+.title-box .title {
+    float: right;
+    margin-top: 5px;
+    margin-right: 27px;
+}
+
+.box-content h5 {
+    float: left;
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+}
+
+.icon {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    height: 220px;
+}
+
+.icon-box {
+    margin-top: 10px;
+}
+
+.icon-box .title h3 {
+    font-size: 23px;
+    font-family: "Sriracha";
+    /* font-family: ""; */
+    letter-spacing: 0.7px;
+}
+
+.icon-box .text p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Dessert Gallery Section */
+
+.image-gallery {
+    /* background-image: url(../imgs/back.jpg); */
+    background-position: center;
+    width: 100%;
+    height: 965px;
+    margin-bottom: 10px;
+}
+
+.menu-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-family: "Sriracha";
+}
+
+.menu-title h3 {
+    font-size: 35px;
+}
+
+.menu-title p {
+    font-size: 20px;
+}
+
+
+.aside-gallery-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../imgs/aside-cake-gallery.jpeg);
+    background-size: cover;
+    width: 20%;
+    height: 592px;
+    background-position: center;
+    float: left;
+}
+
+.aside-gallery-image .card {
+    background-color: transparent;
+    width: 100%;
+    top: 50%;
+    left: -10%;
+
+}
+
+/* .aside-gallery-image img {
+    height: 600px;
+    width: 450px;
+} */
+
+.card {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+/* Image Effects */
+.hidden {
+    font-family: "Sriracha";
+    opacity: 0;
+    transition: 0.7s ease;
+}
+
+.card:hover img {
+    opacity: 0.5;
+}
+
+.card:hover .hidden {
+    opacity: 0.7;
+}
+
+.hidden .price {
+    color: black;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.hidden .cake-name {
+    color: black;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.card:hover .hidden .cake-name h4 {
+    animation: 1s slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* .menu-title h3 {
+    animation: 3s slide-right;
+}
+
+@keyframes slide-right {
+    from {
+        margin-left:-100%;
+        width: 100%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+} */
+
+/* Bakery Contact Info */
+
+.background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(../imgs/info-background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+
+.bakery-info {
+    color: white;
+    text-align: center;
+    font-family: "Sriracha";
+}
+
+.bakery-info-contact h3 {
+    color: #f5c181;
+}
+
+.boxes {
+    margin-top: 150px;
+}
+
+.bakery-info-icon {
+    margin-bottom: 20px;
+}
+
+.bakery-info-text {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 700px)
+{
+
+@media screen and (max-width:600px) {
+
+    .navbar {
+        float: none;
+        background-color: black;
+    }
+
+    .nav-item {
+        margin-left: 0;
+    }
+
+    .top-content {
+        position: relative;
+        height: 400px;
+        background-attachment: initial;
+
+    }
+
+    .image-text {
+        top: 45%;
+        left: 50%;
+    }
+
+    .image-text span {
+        /* font-size: 17px; */
+        font-size: 20px;
+        animation: 2s text-slide;
+    }
+
+    @keyframes text-slide {
+        from {
+            margin-right: 10%;
+        }
+
+        to {
+            margin-right: 0;
+        }
+    }
+
+    .image-text h1 {
+        font-size: 25px;
+    }
+
+    .image-text p {
+        font-size: 20px;
+        animation: 2s p-slide;
+    }
+
+    @keyframes p-slide {
+        from {
+            margin-right: -20%;
+        }
+
+        to {
+            margin-right: 0;
+        }
+    }
+
+    /* Box Content */
+
+    .box-content {
+        padding-top: 40px;
+        height: 580px;
+    }
+
+    .title-box .pref {
+        margin-right: 10px;
+        /* font-size: 85px; */
+    }
+
+    .title-box .sub {
+        font-size: 15px;
+    }
+
+    .title-box .title {
+        float: none;
+        font-size: 30px;
+    }
+
+    .icon {
+        height: 70px;
+    }
+
+    .icon-box {
+        margin-top: 30px;
+    }
+
+    .icon-box .title h3 {
+        font-size: 20px;
+    }
+
+    .icon-box .text p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    /* Dessert Gallery Section */
+
+    .image-gallery {
+        height: 100%;
+    }
+
+    .menu-title {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .menu-title h3 {
+        font-size: 25px;
+    }
+
+    .menu-title p {
+        font-size: 15px;
+    }
+
+
+    .aside-gallery-image {
+        float: none;
+        width: 100%;
+        height: 250px;
+    }
+
+    .aside-gallery-image .card {
+        background-color: transparent;
+        width: 100%;
+        top: 50%;
+        left: 0;
+    }
+
+    /* .aside-gallery-image img {
+        height: 600px;
+        width: 450px;
+    } */
+
+    .card {
+        margin-top: 20px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+   /* Bakery Contact Info */
+
+   .background {
+        height: 650px;
+        background-position: center;
+    }
+
+    .bakery-info {
+        color: white;
+        text-align: center;
+        font-family: "Sriracha";
+    }
+
+    .bakery-info-contact h3 {
+        font-size: 25px;
+    }
+
+    .bakery-info-contact p {
+        font-size: 15px;
+    }
+
+    .boxes {
+        /* margin-top: 150px; */
+        margin-top: 30px;
+    }
+
+    .bakery-info-icon {
+        margin-bottom: 20px;
+    }
+
+    .bakery-info-text {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 700px){ 
+   
+    .navbar {
+        float: none;
+        background-color: black;
+    }
+
+    .nav-item {
+        margin-left: 0;
+    }
+
+    .top-content {
+        position: relative;
+        height: 380px;
+        background-attachment: initial;
+
+    }
+
+    .image-text {
+        height: 400px;
+        background-attachment: fixed;
+    }
+
+    .image-text {
+        position: relative;
+        top: 45%;
+        left: 50%;
+    }
+
+    .image-text span {
+        /* font-size: 17px; */
+        font-size: 20px;
+        animation: 2s text-slide;
+    }
+
+    @keyframes text-slide {
+        from {
+            margin-right: 10%;
+        }
+
+        to {
+            margin-right: 0;
+        }
+    }
+
+    .image-text h1 {
+        font-size: 25px;
+    }
+
+    .image-text p {
+        font-size: 20px;
+        animation: 2s p-slide;
+    }
+
+    @keyframes p-slide {
+        from {
+            margin-right: -20%;
+        }
+
+        to {
+            margin-right: 0;
+        }
+    }
+
+    /* Box Content */
+
+    .box-content {
+        padding-top: 40px;
+        height: 580px;
+    }
+
+    .title-box .pref {
+        /* font-size: 85px; */
+    }
+
+    .title-box .sub {
+        font-size: 18px;
+    }
+
+    .title-box .title {
+        font-size: 35px;
+    }
+
+    .icon {
+        height: 60px;
+    }
+
+    .icon-box {
+        margin-top: 30px;
+    }
+
+    .icon-box .title h3 {
+        font-size: 20px;
+    }
+
+    .icon-box .text p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    /* Dessert Gallery Section */
+
+
+    .image-gallery {
+        height: 100%;
+    }
+
+    .image-gallery {}
+
+    .menu-title {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .menu-title h3 {
+        font-size: 25px;
+    }
+
+    .menu-title p {
+        font-size: 15px;
+    }
+
+
+    .aside-gallery-image {
+        float: none;
+        width: 100%;
+        height: 250px;
+    }
+
+    .aside-gallery-image .card {
+        background-color: transparent;
+        width: 100%;
+        top: 50%;
+        left: 0;
+    }
+
+    /* .aside-gallery-image img {
+        height: 600px;
+        width: 450px;
+    } */
+
+    .card {
+        margin-top: 20px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+   /* Bakery Contact Info */
+
+   .background {
+        height: 650px;
+        background-position: center;
+    height: 650px;
+    }
+
+    .bakery-info {
+        color: white;
+        text-align: center;
+        font-family: "Sriracha";
+    }
+
+    .bakery-info-contact h3 {
+        color: #f5c181;
+        font-size: 25px;
+    }
+
+    .bakery-info-contact p {
+        font-size: 15px;
+    }
+
+    .boxes {
+        /* margin-top: 150px; */
+        margin-top: 30px;
+    }
+
+    .bakery-info-icon {
+        margin-bottom: 20px;
+    }
+
+    .bakery-info-text {
+        margin-top: 20px;
+
+    }
+}
+
+/* FOR IPHONE X AND PIXEL2 XL LANDSCAPE */
+
+@media screen and (orientation: landscape) and (min-width: 731px) and (max-width: 823px){
+
+    .navbar {
+        float: none;
+        background-color: black;
+    }
+
+    .nav-item {
+        margin-left: 0;
+    }
+
+    .top-content {
+        position: relative;
+        height: 380px;
+        background-attachment: initial;
+
+    }
+
+    .image-text {
+        top: 45%;
+        left: 50%;
+    }
+
+    .image-text span {
+        /* font-size: 17px; */
+        font-size: 20px;
+        animation: 2s text-slide;
+    }
+
+    @keyframes text-slide {
+        from {
+            margin-right: 10%;
+        }
+
+        to {
+            margin-right: 0;
+        }
+    }
+
+    .image-text h1 {
+        font-size: 25px;
+    }
+
+    .image-text p {
+        font-size: 20px;
+        animation: 2s p-slide;
+    }
+
+    @keyframes p-slide {
+        from {
+            margin-right: -20%;
+        }
+
+        to {
+            margin-right: 0;
+        }
+    }
+
+    /* Box Content */
+
+    .box-content {
+        padding-top: 40px;
+        height: 580px;
+    }
+
+    .title-box .pref {
+        /* font-size: 85px; */
+    }
+
+    .title-box .sub {
+        font-size: 18px;
+    }
+
+    .title-box .title {
+        font-size: 35px;
+    }
+
+    .icon {
+        height: 60px;
+    }
+
+    .icon-box {
+        margin-top: 30px;
+    }
+
+    .icon-box .title h3 {
+        font-size: 20px;
+    }
+
+    .icon-box .text p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    /* Dessert Gallery Section */
+
+    .image-gallery {
+        height: 100%;
+    }
+
+    .menu-title {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .menu-title h3 {
+        font-size: 25px;
+    }
+
+    .menu-title p {
+        font-size: 15px;
+    }
+
+
+    .aside-gallery-image {
+        float: none;
+        width: 100%;
+        height: 250px;
+    }
+
+    .aside-gallery-image .card {
+        background-color: transparent;
+        width: 100%;
+        top: 50%;
+        left: 0;
+    }
+
+    /* .aside-gallery-image img {
+        height: 600px;
+        width: 450px;
+    } */
+
+    .card {
+        margin-top: 20px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+   /* Bakery Contact Info */
+
+   .background {
+        height: 650px;
+        background-position: center;
+    }
+
+    .bakery-info {
+        color: white;
+        text-align: center;
+        font-family: "Sriracha";
+    }
+
+    .bakery-info-contact h3 {
+        color: #f5c181;
+        font-size: 25px;
+    }
+
+    .bakery-info-contact p {
+        font-size: 15px;
+    }
+
+    .boxes {
+        /* margin-top: 150px; */
+        margin-top: 30px;
+    }
+
+    .bakery-info-icon {
+        margin-bottom: 20px;
+    }
+
+    .bakery-info-text {
+        margin-top: 20px;
+    }
+}
+}
+
+
